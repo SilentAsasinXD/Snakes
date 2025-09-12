@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; 
+    background-color: #00054d;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 43rem;
+    width: 36rem;
+    background-color: #011e5d;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25);
+    gap: 5px;
+}
+
+.score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 9rem;
+    padding: 10px 20px;
+    background-color: #0f2ec7;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.25);
+}
+
+.score {
+    font-size: 1.5em;
+    color: #a8c9f0;
+}
+.game-container {
+    display: grid;
+    grid-template: repeat(25,1fr) / repeat(25,1fr);
+    height: 32rem;
+    width: 32rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+
+}
+
+p {
+    color: #a8c9f0;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+h1 {
+    color: #a8c9f0;
+    font-size: 2em;
+}
+
+.food img {
+    height: 1.3rem;
+    width: 1.3rem;
+}
