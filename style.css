@@ -72,3 +72,8 @@ h1 {
     height: 1.3rem;
     width: 1.3rem;
 }
+.head {
+    background-color: green;
+    border: 2px solid darkgreen;
+    border-radius: 7px;
+}
