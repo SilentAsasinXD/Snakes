@@ -35,7 +35,12 @@ function edgeMap() {
 }
 
 function gameOver() {
-    
+    foodGenerator();
+    snakeGenerator();
+    velocityX = 0 ;
+    velocityY = 0 ;
+    score = 0 ;
+    alert("Game Over! Press OK to restart.");
 }
 
 
@@ -54,7 +59,7 @@ function renderGame() {
 
 foodGenerator();
 snakeGenerator();
-setInterval(renderGame, 190);
+setInterval(renderGame, 150);
 
 document.addEventListener("keydown", (e) => {
     if(e.key === "ArrowUp" && velocityY != 1) {
