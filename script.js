@@ -34,6 +34,12 @@ function edgeMap() {
     }
 }
 
+function gameOver() {
+    
+}
+
+
+
 
 
 function renderGame() {
@@ -51,18 +57,22 @@ snakeGenerator();
 setInterval(renderGame, 190);
 
 document.addEventListener("keydown", (e) => {
-    if(e.key === "ArrowUp") {
+    if(e.key === "ArrowUp" && velocityY != 1) {
         velocityX = 0 ;
         velocityY = -1 ;
-    } else if(e.key === "ArrowDown") {
+        e.preventDefault();
+    } else if(e.key === "ArrowDown" && velocityY != -1) {
         velocityX = 0 ;
         velocityY = 1 ;
-    } else if(e.key === "ArrowLeft") {
+        e.preventDefault();
+    } else if(e.key === "ArrowLeft" && velocityX != 1) {
         velocityX = -1 ;
         velocityY = 0 ;
-    } else if(e.key === "ArrowRight") {
+        e.preventDefault();
+    } else if(e.key === "ArrowRight" && velocityX != -1) {
         velocityX = 1 ;
         velocityY = 0 ;
+        e.preventDefault();
     }
     renderGame();
     console.log(headX, headY);
